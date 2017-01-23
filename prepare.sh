@@ -14,8 +14,6 @@ git checkout 01a1b5fc6e242775d126a0f357ea91c38c783404
 
 ./install_rally.sh --branch 0.7.0 -d rally-venv/ -y
 
-sed -i 's|#swift_operator_role = Member|swift_operator_role = SwiftOperator|g' /root/rally/rally-venv/etc/rally/rally.conf
-
 source /root/rally/rally-venv/bin/activate
 source /root/openrc_tempest
 rally-manage db recreate
